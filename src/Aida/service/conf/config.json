@@ -1,6 +1,0 @@
-{
-  "BeatingInterval": 10,
-  "SocketHost": "127.0.0.1:1024",
-  "HttpPort":":8080",
-  "HttpsPort":":443"
-}

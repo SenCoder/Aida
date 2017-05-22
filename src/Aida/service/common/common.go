@@ -8,20 +8,19 @@ var HttpToSocket chan string
 var SocketToHttp chan string
 
 //type Msg struct {
-//	Meta   map[string]interface{} `json:"meta"`
-//	Content interface{}            `json:"content"`
+//	Meta   map[string]interface{} 	`json:"meta"`
+//	Content interface{}            	`json:"content"`
 //	Debug string            	`json:"debug"`
 //}
 
 
 type Msg struct {
-	Meta   map[string]interface{} `json:"meta"`
-	IntentType	string	`json:"intentType"`
-	Value 		string	`json:"value"`
+	Meta   map[string]interface{} 	`json:"meta"`
+	IntentType	string		`json:"intentType"`
+	Value 		string		`json:"value"`
 }
 
 const (
-
 	SWITCH_CHANNEL_BY_NAME = "SWITCH_CHANNEL_BY_NAME"
 	SWITCH_CHANNEL_BY_NUMBER = "SWITCH_CHANNEL_BY_NUMBER"
 	SET_VOLUME = "SET_VOLUME"
