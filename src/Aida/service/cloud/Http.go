@@ -3,6 +3,12 @@ package cloud
 import (
 	"net/http"
 	"Aida/service/common"
+	"github.com/b00giZm/golexa"
+	"fmt"
+	"log"
+	"io/ioutil"
+	"encoding/json"
+	"math/rand"
 )
 
 const (
@@ -50,7 +56,7 @@ func init() {
 func match(raw string) string {
 	return raw
 }
-/*
+
 func handler(writer http.ResponseWriter, request *http.Request) {
 
 	//Chan := make(chan string)
@@ -162,15 +168,15 @@ func handler(writer http.ResponseWriter, request *http.Request) {
 	re,_ := json.Marshal(response)
 	writer.Write(re)
 }
-*/
 
+/*
 func handler(writer http.ResponseWriter, request *http.Request) {
-	msg := "event:hello, Aida"
+	msg := "event:====hello, Aida &* %$#@ ,.-=yfhjfhjfhfgghdhgffhghjghjffggdgdhdgjfjghjghjhffgdgryutughjfhrythj我们"
 	common.HttpToSocket <- msg
 	writer.Write([]byte("hello"))
 }
 
-
+*/
 func StartHttpServer(port string)  {
 	http.HandleFunc("/", handler)
 	http.ListenAndServe(port, nil)
